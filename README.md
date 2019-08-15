@@ -8,9 +8,21 @@ This project was written in the Anaconda environment and Python 3.7
 The purpose of this project was to apply data engineering methods and analyze text messages sent during disasters to build a model for an API that classifies disaster messages.
 
 ## Files
-This repository contains the following files:
+This repository contains the following:
+- data
+    - disaster_categories.csv   -> data to process 
+    - disaster_messages.csv   -> data to process
+    - process_data.py
+    - DisasterResponse.db   -> database to save clean data to
 
---- insert ---
+- models
+    - train_classifier.py
+    - classifier.pkl   -> saved model 
+    
+- app
+    - template  -> contains html files for the web app
+    - run.py  -> Flask file that runs the web app
+
 
 ## Summary
 - An ETL pipeline was built to load and clean message data before storing them in a SQLite database.
